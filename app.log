@@ -1,0 +1,46 @@
+2024-11-09 13:53:46,249 - app - ERROR - Error sending OTP: (530, b'5.7.0 Authentication Required. For more information, go to\n5.7.0  https://support.google.com/mail/?p=WantAuthError d2e1a72fcca58-724078609e8sm4975424b3a.23 - gsmtp', '199gsamgyup@gmail.com')
+2024-11-09 13:55:47,397 - app - ERROR - Error sending OTP: (530, b'5.7.0 Authentication Required. For more information, go to\n5.7.0  https://support.google.com/mail/?p=WantAuthError d9443c01a7336-21177e59f0dsm40261845ad.173 - gsmtp', '199gsamgyup@gmail.com')
+2024-11-09 13:57:00,551 - app - INFO - Stored OTP: Z6GYLA, OTP Expiry String: 2024-11-09T06:01:39.607536
+2024-11-09 13:59:08,410 - app - INFO - Stored OTP: 5MX5FJ, OTP Expiry String: 2024-11-09T06:03:50.627157
+2024-11-09 13:59:23,146 - app - INFO - Stored OTP: VHU0BK, OTP Expiry String: 2024-11-09T06:04:15.651716
+2024-11-09 13:59:24,518 - app - INFO - Generated OTP: 7HAULK
+2024-11-09 13:59:46,098 - app - INFO - Stored OTP: 7HAULK, OTP Expiry String: 2024-11-09T06:04:24.518008
+2024-11-09 14:00:00,992 - app - INFO - Stored OTP: 7HAULK, OTP Expiry String: 2024-11-09T06:04:24.518008
+2024-11-09 14:04:24,158 - app - INFO - Stored OTP: L1ZNPU, OTP Expiry String: 2024-11-09T06:09:06.154517
+2024-11-09 14:04:42,577 - app - INFO - Stored OTP: VD0K4G, OTP Expiry String: 2024-11-09T06:09:36.740591
+2024-11-09 14:04:43,563 - app - INFO - Generated OTP: G81LEO
+2024-11-09 14:05:00,329 - app - INFO - Stored OTP: G81LEO, OTP Expiry String: 2024-11-09T06:09:43.563446
+2024-11-09 14:08:22,830 - app - INFO - Stored OTP: MDJFWQ, OTP Expiry String: 2024-11-09T06:13:06.725808
+2024-11-09 14:09:38,793 - app - ERROR - Error while creating reservation: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`gscheduler`.`customer_reservation`, CONSTRAINT `customer_reservation_fk_branch_id` FOREIGN KEY (`branch_id`) REFERENCES `branch` (`branch_id`) ON DELETE CASCADE ON UPDATE CASCADE)')
+[SQL: INSERT INTO customer_reservation (reservation_id, user_id, branch_id, status_comment, number_of_guests, status, reservation_date, reservation_time, created_at, updated_at, updated_by) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: ('Ono6fi5f', 'gUyZ9CuN', '5', None, 12, 'Pending', datetime.date(2024, 11, 23), datetime.datetime(1900, 1, 1, 14, 14), datetime.datetime(2024, 11, 9, 6, 9, 38, 784923), datetime.datetime(2024, 11, 9, 6, 9, 38, 784923), None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-11-09 14:09:38,798 - app - ERROR - Error: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`gscheduler`.`customer_reservation`, CONSTRAINT `customer_reservation_fk_branch_id` FOREIGN KEY (`branch_id`) REFERENCES `branch` (`branch_id`) ON DELETE CASCADE ON UPDATE CASCADE)')
+[SQL: INSERT INTO customer_reservation (reservation_id, user_id, branch_id, status_comment, number_of_guests, status, reservation_date, reservation_time, created_at, updated_at, updated_by) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: ('Ono6fi5f', 'gUyZ9CuN', '5', None, 12, 'Pending', datetime.date(2024, 11, 23), datetime.datetime(1900, 1, 1, 14, 14), datetime.datetime(2024, 11, 9, 6, 9, 38, 784923), datetime.datetime(2024, 11, 9, 6, 9, 38, 784923), None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-11-09 14:12:54,282 - app - INFO - Stored OTP: 16E2H2, OTP Expiry String: 2024-11-09T06:17:41.520263
+2024-11-09 14:18:15,595 - app - INFO - Stored OTP: ICZO5O, OTP Expiry String: 2024-11-09T06:22:54.485634
+2024-11-09 14:23:06,198 - app - INFO - Stored OTP: 6VPOQR, OTP Expiry String: 2024-11-09T06:27:44.256858
+2024-11-09 14:25:20,291 - app - INFO - Stored OTP: 5N34Y9, OTP Expiry String: 2024-11-09T06:30:04.535090
+2024-11-09 14:26:03,497 - app - ERROR - Error occurred in handle_user_action: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`gscheduler`.`customer_reservation`, CONSTRAINT `customer_reservation_fk_user_id` FOREIGN KEY (`user_id`) REFERENCES `usertable` (`user_id`))')
+[SQL: UPDATE customer_reservation SET user_id=%s, updated_at=%s WHERE customer_reservation.id = %s]
+[parameters: [(None, datetime.datetime(2024, 11, 9, 6, 26, 3, 489468), 96), (None, datetime.datetime(2024, 11, 9, 6, 26, 3, 489468), 98), (None, datetime.datetime(2024, 11, 9, 6, 26, 3, 489468), 99), (None, datetime.datetime(2024, 11, 9, 6, 26, 3, 489468), 100)]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-11-09 14:29:03,444 - app - INFO - Stored OTP: MA23I3, OTP Expiry String: 2024-11-09T06:33:47.159960
+2024-11-09 14:29:14,249 - app - ERROR - Error occurred in handle_user_action: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`gscheduler`.`logs`, CONSTRAINT `logs_fk_user_id` FOREIGN KEY (`user_id`) REFERENCES `usertable` (`user_id`))')
+[SQL: UPDATE logs SET user_id=%s WHERE logs.id = %s]
+[parameters: [(None, 542), (None, 543)]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-11-09 14:30:55,293 - app - ERROR - Error occurred in handle_user_action: (MySQLdb.IntegrityError) (1451, 'Cannot delete or update a parent row: a foreign key constraint fails (`gscheduler`.`logs`, CONSTRAINT `logs_fk_user_id` FOREIGN KEY (`user_id`) REFERENCES `usertable` (`user_id`))')
+[SQL: DELETE FROM usertable WHERE usertable.id = %s]
+[parameters: (15,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-11-09 14:31:48,973 - app - ERROR - Error occurred in handle_user_action: (MySQLdb.IntegrityError) (1451, 'Cannot delete or update a parent row: a foreign key constraint fails (`gscheduler`.`logs`, CONSTRAINT `logs_fk_user_id` FOREIGN KEY (`user_id`) REFERENCES `usertable` (`user_id`))')
+[SQL: DELETE FROM usertable WHERE usertable.id = %s]
+[parameters: (15,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-11-09 14:35:33,175 - app - ERROR - Error occurred in handle_user_action: (MySQLdb.IntegrityError) (1451, 'Cannot delete or update a parent row: a foreign key constraint fails (`gscheduler`.`logs`, CONSTRAINT `logs_fk_user_id` FOREIGN KEY (`user_id`) REFERENCES `usertable` (`user_id`))')
+[SQL: DELETE FROM usertable WHERE usertable.id = %s]
+[parameters: (15,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
